@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d47a5b3cb1980d144977017bf5c338a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StarPrefab: {fileID: 4343749435007613945, guid: 872607e4782cdf24b99798316f6e76ef, type: 3}
 --- !u!4 &269528934
 Transform:
   m_ObjectHideFlags: 0
@@ -364,6 +365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e09f8867080eebd4781a02d7c1206acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CrabPrefab: {fileID: 9125700954255548598, guid: ad3cf0002aaf4b840be0c4c5d43a5071, type: 3}
 --- !u!4 &789465726
 Transform:
   m_ObjectHideFlags: 0
