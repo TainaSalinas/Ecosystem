@@ -13,7 +13,6 @@ public class Collisions : MonoBehaviour
     private void Start()
     {
         type = typeOptions[Random.Range(0, 2)];
-        SetAppropriateSprite();
     }
 
     private void Update()
