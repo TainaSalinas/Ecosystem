@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4045188441923702510}
   m_Layer: 0
   m_Name: CrabPrefab
-  m_TagString: Untagged
+  m_TagString: crab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  type: crab
 --- !u!50 &2729862674809617754
 Rigidbody2D:
   serializedVersion: 4
@@ -109,19 +110,19 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9125700954255548598}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!61 &5051403838565823606
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -161,5 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: star
+  type1: crab
   star: {fileID: 21300000, guid: 054f1e97639730944b12831416478c86, type: 3}
   crab: {fileID: 21300000, guid: 333bb2c60c5c0b043be45e642c68e5d9, type: 3}
+  worm: {fileID: 21300000, guid: 5ff8ab0dfe13a0542b9990bdc8523d00, type: 3}

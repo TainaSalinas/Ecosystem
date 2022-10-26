@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 542124035058219990}
   - component: {fileID: 8765380004712464146}
   - component: {fileID: 7942667803269531633}
-  - component: {fileID: 2040434037709658755}
   - component: {fileID: 4582401131789212788}
   - component: {fileID: 4990471992186529189}
+  - component: {fileID: 4262420574057683599}
   m_Layer: 0
   m_Name: StarfishPrefab
-  m_TagString: Untagged
+  m_TagString: starfish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,27 +102,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   counter: 0
---- !u!50 &2040434037709658755
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4343749435007613945}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 1
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &4582401131789212788
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -164,3 +143,25 @@ MonoBehaviour:
   type: star
   star: {fileID: 21300000, guid: 054f1e97639730944b12831416478c86, type: 3}
   crab: {fileID: 21300000, guid: 333bb2c60c5c0b043be45e642c68e5d9, type: 3}
+  worm: {fileID: 21300000, guid: 5ff8ab0dfe13a0542b9990bdc8523d00, type: 3}
+--- !u!50 &4262420574057683599
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4343749435007613945}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

@@ -5,9 +5,14 @@ using UnityEngine;
 public class WormLife : MonoBehaviour
 {
     public float score;
-    float randomX = 8f;
-    float randomY = 4f;
+    float randomX = 7f;
+    float randomY = 3.5f;
     public float counter;
+    public string type = "worm";
+
+    public GameObject starfish;
+    public GameObject crab;
+
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +37,15 @@ public class WormLife : MonoBehaviour
         if (score == 1500)
         {
             StartCoroutine(Death());
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "crab")
+        {
+            Debug.Log("hit");
+            Destroy(gameObject);
         }
     }
 

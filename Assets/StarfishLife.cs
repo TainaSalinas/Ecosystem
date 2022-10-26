@@ -6,9 +6,10 @@ public class StarfishLife : MonoBehaviour
 {
 
     public float score;
-    float randomX = 0.05f;
+    float randomX = 0.1f;
     float randomY = 0.5f;
     public float counter;
+
 
     // Start is called before the first frame update
     void Start()
