@@ -20,7 +20,7 @@ public class StarfishSpawn : MonoBehaviour
         float randX = Random.Range(-4.7f, 6.7f);
         float randY = Random.Range(-4.7f, -4.74f);
 
-        if (counter == 600)
+        if (counter == 1000)
         {
             GameObject.Instantiate(StarPrefab, new Vector3(randX, randY, 0), Quaternion.identity);
             counter = 0;

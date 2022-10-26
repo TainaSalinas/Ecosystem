@@ -20,7 +20,7 @@ public class CrabSpawn : MonoBehaviour
         float randX = Random.Range(8f, 8.75f);
         float randY = Random.Range(0f, 4f);
 
-        if(counter == 300)
+        if(counter == 400)
         {
             GameObject.Instantiate(CrabPrefab, new Vector3(randX, randY, 0), Quaternion.identity);
             counter = 0;

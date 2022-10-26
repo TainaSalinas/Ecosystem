@@ -52,7 +52,7 @@ public class WormLife : MonoBehaviour
     IEnumerator Death()
     {
         GetComponent<Renderer>().material.color = Color.grey;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);
     }
 }

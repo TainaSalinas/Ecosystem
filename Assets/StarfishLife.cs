@@ -37,10 +37,19 @@ public class StarfishLife : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "crab")
+        {
+            Debug.Log("Freeze");
+            counter = -2500;
+        }
+    }
+
     IEnumerator Death()
     {
         GetComponent<Renderer>().material.color = Color.grey;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);
     }
 }
