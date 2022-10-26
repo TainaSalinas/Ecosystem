@@ -10,6 +10,8 @@ public class StarfishLife : MonoBehaviour
     float randomY = 0.5f;
     public float counter;
 
+    public AudioSource Starfish;
+
 
     // Start is called before the first frame update
     void Start()
@@ -22,16 +24,17 @@ public class StarfishLife : MonoBehaviour
     {
         counter++;
 
-        if (counter == 120)
+        if (counter == 180)
         {
             this.transform.position += new Vector3(Random.Range(-randomX, randomX),
-            randomY, 0);
+            Random.Range(-0.02f,randomY), 0);
+            this.GetComponent<AudioSource>().Play();
             counter = 0;
         }
 
         score++;
 
-        if (score == 2500)
+        if (score == 5000)
         {
             StartCoroutine(Death());
         }
@@ -42,7 +45,7 @@ public class StarfishLife : MonoBehaviour
         if (collision.gameObject.tag == "crab")
         {
             Debug.Log("Freeze");
-            counter = -2500;
+            counter = -5000;
         }
     }
 

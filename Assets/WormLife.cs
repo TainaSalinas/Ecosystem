@@ -13,11 +13,14 @@ public class WormLife : MonoBehaviour
     public GameObject starfish;
     public GameObject crab;
 
+    public AudioSource Worm;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+            this.GetComponent<AudioSource>().Play();
+
     }
 
     // Update is called once per frame
@@ -29,6 +32,7 @@ public class WormLife : MonoBehaviour
         {
             this.transform.position += new Vector3(Random.Range(-randomX, randomX),
             Random.Range(-randomY,randomY), 0);
+            this.GetComponent<AudioSource>().Play();
             counter = 0;
         }
 
@@ -46,6 +50,14 @@ public class WormLife : MonoBehaviour
         {
             Debug.Log("hit");
             Destroy(gameObject);
+        }
+
+        if (collision.gameObject.tag == "starfish")
+        {
+            Debug.Log("hit");
+            this.transform.position += new Vector3(Random.Range(-randomX, randomX),
+            Random.Range(-randomY, randomY), 0);
+            this.GetComponent<AudioSource>().Play();
         }
     }
 
